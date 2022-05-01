@@ -1,0 +1,17 @@
+repositories:
+  - name: traefik
+    url: https://helm.traefik.io/traefik
+
+environments:
+  local:
+  dev:
+  staging:
+  production:
+
+releases:
+  - name: traefik
+    namespace: traefik
+    createNamespace: true
+    chart: traefik/traefik
+    values:
+      - values.yml.gotmpl
