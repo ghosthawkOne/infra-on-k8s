@@ -1,0 +1,34 @@
+logs:
+  general:
+    format: json
+    level: DEBUG
+  access:
+    enabled: true
+    format: json
+
+ports:
+  traefik:
+    port: 9000
+    expose: false
+    exposedPort: 900
+    protocol: TCP
+  web:
+    port: 8000
+    expose: true
+    exposedPort: 80
+    protocol: TCP
+  websecure:
+    port: 8443
+    expose: true
+    exposedPort: 443
+    protocol: TCP
+  metrics:
+    port: 9100
+    expose: false
+    exposedPort: 9100
+    protocol: TCP
+  intcp:
+    port: 9292
+    expose: true
+    exposedPort: 9292
+    protocol: TCP

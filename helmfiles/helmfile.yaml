@@ -1,0 +1,9 @@
+environments:
+  local:
+  dev:
+  staging:
+  production:
+
+helmfiles:
+  - traefik/helmfile.yaml
+  
