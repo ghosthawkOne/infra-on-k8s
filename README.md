@@ -14,6 +14,8 @@ You will need the following tools:
 
 4. [`kubectl`](https://kubernetes.io/docs/tasks/tools/)
 
+5. [The `helm diff` plugin](https://github.com/databus23/helm-diff)
+
 ## Applications covered
 
 This repository covers the following applications:
