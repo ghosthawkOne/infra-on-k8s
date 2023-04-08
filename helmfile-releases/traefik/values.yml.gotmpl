@@ -1,0 +1,21 @@
+ingressRoute:
+  dashboard:
+    enabled: false
+
+providers:
+  kubernetesCrd:
+    allowCrossNamespace: true
+    allowExternalNameServices: true
+
+logs:
+  general:
+    level: DEBUG
+    format: json
+  access:
+    level: DEBUG
+    format: json
+    fields:
+      headers:
+        defaultmode: keep
+
+prometheus: null
