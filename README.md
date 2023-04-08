@@ -18,4 +18,4 @@ You will need the following tools:
 
 This repository covers the following applications:
 
-1. [Traefik](helmfile-releases/traefik/README.md)
+1. [Traefik](helmfile-releases/traefik)
