@@ -13,3 +13,9 @@ kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/
 ```
 
 Please refer to the artifacthub.io page on `cert-manager` for the exact version of the `cert-manager.crds.yaml` file that you need to apply.
+
+## Deploying
+
+1. Install the CRDs
+
+2. Execute `helmfile [-e <environmentName>] apply`
