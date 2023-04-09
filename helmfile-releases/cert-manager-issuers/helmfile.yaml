@@ -1,0 +1,13 @@
+environments:
+  local:
+    secrets:
+      - env/common/secrets.yaml
+  dev:
+  qa:
+  staging:
+  production:
+---
+releases:
+  - name: cert-manager-issuers
+    namespace: cert-manager
+    chart: cert-manager-issuers
