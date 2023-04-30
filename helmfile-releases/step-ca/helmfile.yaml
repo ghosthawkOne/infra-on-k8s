@@ -1,0 +1,22 @@
+repositories:
+  - name: smallstep
+    url: https://smallstep.github.io/helm-charts/
+
+environments:
+  local:
+    values:
+      - env/local/values.yml
+    secrets:
+      - env/local/secrets.yaml
+  dev:
+  qa:
+  staging:
+  production:
+---
+releases:
+  - name: step-ca
+    namespace: step-ca
+    values:
+      - values.yml.gotmpl
+    chart: smallstep/step-certificates
+    version: 1.23.2+5
