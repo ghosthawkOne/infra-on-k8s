@@ -11,3 +11,5 @@ releases:
   - name: cert-manager-issuers
     namespace: cert-manager
     chart: cert-manager-issuers
+    values:
+      - values.yml.gotmpl
