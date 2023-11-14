@@ -1,0 +1,14 @@
+{
+    "workbench.editor.restoreViewState": false,
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "helmfile.yaml",
+                "helmfile.yml"
+            ],
+            "schema": true,
+            "url": "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/helmfile.json"
+        }
+    ]
+}
