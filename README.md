@@ -23,5 +23,3 @@ This repository covers the following applications:
 1. [Traefik](helmfile-releases/traefik)
 
 2. [Cert-manager](helmfile-releases/cert-manager/) and [Issuers](helmfile-releases/cert-manager-issuers/)
-
-3. [Step-ca](helmfile-releases/step-ca/)
