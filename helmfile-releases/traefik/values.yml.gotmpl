@@ -3,7 +3,8 @@ ingressRoute:
     enabled: false
 
 providers:
-  kubernetesCrd:
+  kubernetesCRD:
+    enabled: true
     allowCrossNamespace: true
     allowExternalNameServices: true
 
@@ -19,3 +20,6 @@ logs:
         defaultmode: keep
 
 prometheus: null
+
+service:
+  type: LoadBalancer

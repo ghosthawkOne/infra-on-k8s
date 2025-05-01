@@ -4,17 +4,17 @@ repositories:
     url: https://traefik.github.io/charts
 
 environments:
-  local:
-  dev:
-  qa:
-  staging:
-  production:
+  local: {}
+  dev: {}
+  qa: {}
+  staging: {}
+  production: {}
 ---
 releases:
   - name: traefik
     namespace: traefik
     createNamespace: true
     chart: traefik/traefik
-    version: 22.1.0
+    version: 35.2.0
     values:
       - values.yml.gotmpl
