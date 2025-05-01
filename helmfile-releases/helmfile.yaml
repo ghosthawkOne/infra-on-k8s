@@ -1,10 +1,10 @@
 ---
 environments:
-  local:
-  dev:
-  qa:
-  staging:
-  production:
+  local: {}
+  dev: {}
+  qa: {}
+  staging: {}
+  production: {}
 ---
 helmfiles:
   - traefik/helmfile.yaml
