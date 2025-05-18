@@ -1,0 +1,14 @@
+resources:
+  requests:
+    cpu: 200m
+    memory: 256Mi
+  limits:
+    cpu: 200m
+    memory: 256Mi
+
+defaultArgs:
+  - --kubelet-preferred-address-types=Hostname
+  - --cert-dir=/tmp
+  - --kubelet-insecure-tls
+  - --metric-resolution=15s
+  - --kubelet-use-node-status-port

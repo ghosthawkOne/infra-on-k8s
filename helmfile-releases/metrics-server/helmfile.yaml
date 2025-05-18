@@ -1,0 +1,20 @@
+---
+repositories:
+  - name: metrics-server
+    url: https://kubernetes-sigs.github.io/metrics-server/
+
+environments:
+  local: {}
+  dev: {}
+  qa: {}
+  staging: {}
+  production: {}
+---
+releases:
+  - name: metrics
+    namespace: monitoring
+    chart: metrics-server/metrics-server
+    version: 3.12.2
+    createNamespace: true
+    values:
+      - values.yaml.gotmpl
