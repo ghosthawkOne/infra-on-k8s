@@ -7,6 +7,8 @@ environments:
   production: {}
 ---
 helmfiles:
-  - traefik/helmfile.yaml
+  - metrics-server/helmfile.yaml
   - cert-manager/helmfile.yaml
+  - eck-operator/helmfile.yaml
   - cert-manager-issuers/helmfile.yaml
+  - traefik/helmfile.yaml
