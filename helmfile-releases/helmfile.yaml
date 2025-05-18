@@ -10,4 +10,3 @@ helmfiles:
   - traefik/helmfile.yaml
   - cert-manager/helmfile.yaml
   - cert-manager-issuers/helmfile.yaml
-  - pmm/helmfile.yaml
