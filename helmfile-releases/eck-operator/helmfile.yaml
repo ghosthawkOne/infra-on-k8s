@@ -1,0 +1,20 @@
+---
+repositories:
+  - name: elastic
+    url: https://helm.elastic.co
+
+environments:
+  local: {}
+  dev: {}
+  qa: {}
+  staging: {}
+  production: {}
+---
+releases:
+  - name: eck
+    namespace: elasticsearch-operator
+    createNamespace: true
+    chart: elastic/eck-operator
+    version: 3.0.0
+    values:
+      - values.yaml.gotmpl
