@@ -15,6 +15,6 @@ releases:
     namespace: traefik
     createNamespace: true
     chart: traefik/traefik
-    version: 37.1.2
+    version: 39.0.0
     values:
       - values.yml.gotmpl
